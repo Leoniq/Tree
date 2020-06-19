@@ -37,7 +37,6 @@ function delNode(button) {
                 $('#main-popup').hide();
                 clearTimeout(timer);
                 $("#result-output").load("index.php #result-output");
-                button = false;
             } else {
                 timer = setTimeout(funcTimer, 1000);
             }
@@ -47,6 +46,7 @@ function delNode(button) {
             $(this).on("click", function() {
                 $('#main-popup').hide();
                 clearTimeout(timer);
+                button = false;
             });
         });
 
