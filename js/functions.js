@@ -37,6 +37,7 @@ function delNode(button) {
                 $('#main-popup').hide();
                 clearTimeout(timer);
                 $("#result-output").load("index.php #result-output");
+                button = false;
             } else {
                 timer = setTimeout(funcTimer, 1000);
             }
