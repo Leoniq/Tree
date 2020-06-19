@@ -46,6 +46,7 @@ function delNode(button) {
             $(this).on("click", function() {
                 $('#main-popup').hide();
                 clearTimeout(timer);
+                button = false; 
             });
         });
 
